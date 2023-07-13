@@ -23,3 +23,12 @@ const getInput = () => {
 	});
 }
 
+window.onload = () => {
+    let reloading = localStorage.getItem("reloading");
+}
+
+
+console.log("hello World!")
+console.log(document.getElementById("inputAmount").value)
+localStorage.setItem("Key", document.getElementById("inputAmount"))
+console.log(localStorage.getItem("Key"))

@@ -33,6 +33,10 @@ def match_currency_type(dataset: list[dict], input_data: dict) -> dict or None:
 def index():
     return render_template("index.html", data=currencies)
 
+@app.route("/about", methods=["GET"])
+def about():
+    return render_template("about.html")
+
 # Data Process Index
 @app.route("/process/convert", methods=["POST"])
 def process():
