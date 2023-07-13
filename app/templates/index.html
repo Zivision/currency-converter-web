@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Currency Converter App</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/Coin.png') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+<h1>Currency Converter</h1>
+  <label for="inputAmount">Enter Amount: </label>
+  <input type="number" min=0 id="inputAmount" value=0 ></input>
+  <select name="left" id="left">
+    {% for item in data %}
+    <option value={{ item.code }}>{{ item.code }}</option>
+    {% endfor %}
+  </select>
+  To 
+  <select name="right" id="right">
+    {% for item in data %}
+    <option value={{ item.code }}>{{ item.code }}</option>
+    {% endfor %}
+  </select>
+  <button id="convert" type="button" onclick="getInput()">
+    Convert
+  </button>
+  <div id="result">Result: </div>
+</body>
+</html>

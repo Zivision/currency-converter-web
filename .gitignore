@@ -1,0 +1,30 @@
+# Productivity Files (not needed in repo)
+TODO.org
+HTTP
+
+**/img
+
+# Emacs temp files
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+
+# Org-mode
+.org-id-locations
+*_archive
+
+
+# Python virtual inviroment
+.venv
+
+# Pycache
+**/__pycache__
+
+# Flycheck
+flycheck_*.el
