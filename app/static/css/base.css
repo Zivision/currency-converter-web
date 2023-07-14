@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+nav {
+    text-align: center;
+}
+
+.navItem {
+    color: black;
+    background-color: #83817C;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+body {
+    background-color: #7C7E83;
+    font-family: 'Open Sans', sans-serif;
+}
