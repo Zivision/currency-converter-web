@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 nav {
-    text-align: center;
+    
 }
 
 .navItem {
     color: black;
-    background-color: #83817C;
+    background-color: #5A5B5F;
     padding: 5px;
     border-radius: 10px;
     text-decoration: none;
+}
+
+.content {
+    background: #5A5B5F;
+    padding: 10px;
+
+    text-align: center;
+
+    width: 90%;
+    margin: 0 auto;
+
+    border-radius: 10px;
 }
 
 body {

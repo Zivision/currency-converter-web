@@ -32,6 +32,7 @@ def match_currency_type(dataset: list[dict], input_data: dict) -> dict or None:
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
+
 # About route 
 @app.route("/about", methods=["GET"])
 def about():
@@ -41,6 +42,11 @@ def about():
 @app.route("/convert", methods=["GET"])
 def convert():
     return render_template("convert.html", data=currencies)
+
+# Test Bootstap
+@app.route("/bootstrap", methods=["GET"])
+def bootstrap():
+    return render_template("bootstrap.html")
 
 # Data Process Index
 @app.route("/process/convert", methods=["POST"])
