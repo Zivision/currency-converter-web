@@ -9,25 +9,31 @@
     {% extends 'base.html'%}
 
     {% block content%}
-    <div class="content">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
       <h2>Currency Converter</h2>
-    <label for="inputAmount">Enter Amount: </label>
-    <input type="number" min=0 id="inputAmount" value=0 ></input>
-    <select name="left" id="left">
-      {% for item in data %}
-      <option value={{ item.code }}>{{ item.code }}</option>
-      {% endfor %}
-    </select>
-    To 
-    <select name="right" id="right">
-      {% for item in data %}
-      <option value={{ item.code }}>{{ item.code }}</option>
-      {% endfor %}
-    </select>
-    <button id="convert" type="button" onclick="getInput()">
-      Convert
-    </button>
-    <h3 id="result">Result: </h3>
+      <label for="inputAmount">Enter Amount: </label>
+      <input type="number" min=0 id="inputAmount" value=0 ></input>
+      <div class="selection">
+	<select name="left" id="left" class="form-select" aria-label="Default select example">
+        <option selected>Select the First Currency Type</option>
+	{% for item in data %}
+	<option value={{ item.code }}>{{ item.code }}</option>
+	{% endfor %}
+      </select>
+      To 
+      <select name="right" id="right" class="form-select" aria-label="Default select example">
+        <option selected>Select the Second Currency Type</option>
+	{% for item in data %}
+	<option value={{ item.code }}>{{ item.code }}</option>
+	{% endfor %}
+      </select>
+      </div>
+      <button id="convert" type="button" onclick="getInput()">
+	Convert
+      </button>
+      <h3 id="result">Result: </h3>
+      </div>
     </div>
     {% endblock %}
   </body>

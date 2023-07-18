@@ -43,11 +43,6 @@ def about():
 def convert():
     return render_template("convert.html", data=currencies)
 
-# Test Bootstap
-@app.route("/bootstrap", methods=["GET"])
-def bootstrap():
-    return render_template("bootstrap.html")
-
 # Data Process Index
 @app.route("/process/convert", methods=["POST"])
 def process():
